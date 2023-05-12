@@ -44,7 +44,31 @@
 //     </div>
 //   );
 // }
+// import { NavLink } from "react-router-dom";
+// import { useContext } from "react";
+// import { AppContext } from "../../App";
+
+// export default function CategoryList() {
+//   const { categories } = useContext(AppContext);
+
+//   const output = categories.map((category) => (
+//     <li key={category.id}>
+//       <NavLink to={`/categories/${category.slug}`}>
+//         {category.name}
+//       </NavLink>
+//       <span>{category.price} som</span>
+//     </li>
+//   ));
+
+//   return (
+//     <div className="CategoryList">
+//       <h3>Categories</h3>
+//       <ul>{output}</ul>
+//     </div>
+//   );
+// }
 import { NavLink } from "react-router-dom";
+import "./CategoryList.css";
 import { useContext } from "react";
 import { AppContext } from "../../App";
 
@@ -53,17 +77,16 @@ export default function CategoryList() {
 
   const output = categories.map((category) => (
     <li key={category.id}>
-      <NavLink to={`/categories/${category.slug}`}>
+      <NavLink to={"/categories/" + category.slug}>
         {category.name}
       </NavLink>
-      <span>{category.price} som</span>
     </li>
-  ));
+  ))
 
   return (
     <div className="CategoryList">
-      <h3>Categories</h3>
-      <ul>{output}</ul>
+      <button className="dropBtn"> Categories <i className="fa-solid fa-chevron-down fa-xs"></i></button>
+      <ul id="dropdown" className="dropdownContent">{output}</ul>
     </div>
-  );
+  )
 }

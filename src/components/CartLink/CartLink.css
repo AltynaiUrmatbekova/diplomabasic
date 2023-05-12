@@ -1,0 +1,33 @@
+.link {
+    text-decoration: none;
+  }
+  
+  .cartlink-button {
+    width: 150px;
+    height: 40px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    /* border: 1px solid black; */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 100ms linear;
+  }
+  .cartlink-button:hover {
+    background-color: palevioletred;
+  }
+  .cartlink-button div {
+    text-decoration: none;
+    color: black;
+    font-family: 'Baloo 2', cursive;
+    font-size: 20px;
+  }
+  .cartlink-button:hover div {
+    color: white;
+  }
+  .cart {
+    width: 50px;
+    transform: translateY(-7px);
+  }
