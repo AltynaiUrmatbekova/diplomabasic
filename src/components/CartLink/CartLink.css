@@ -16,7 +16,7 @@
     transition: all 100ms linear;
   }
   .cartlink-button:hover {
-    background-color: palevioletred;
+    background-color: rgb(80, 5, 30);
   }
   .cartlink-button div {
     text-decoration: none;
