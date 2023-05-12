@@ -5,6 +5,11 @@
     align-items: center;
     margin: 0 10px;
 } 
+@media (max-width: 550px) {
+  .Layout header > .Nav {
+    display: none;
+  }
+}
 /* .Layout {
     display: grid;
     grid-template-areas: "header header"

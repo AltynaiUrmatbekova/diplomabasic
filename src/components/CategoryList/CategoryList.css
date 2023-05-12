@@ -7,7 +7,7 @@
     width: 100%;
   }  */
   .dropBtn {
-    background-color: #b1cc19;
+    background-color: #d3df94;
     color: white;
     padding: 10px;
     font-size: 16px;
@@ -17,7 +17,7 @@
     font-family: inherit;
   }
   .dropBtn:hover {
-    background-color: #c6e900;
+    background-color: #1f220c;
   }
   .CategoryList {
     position: relative;
