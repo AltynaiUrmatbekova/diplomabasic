@@ -1,0 +1,12 @@
+.HomeList {
+    display: flex;
+  }
+  .HomeList .homeContent {
+    max-width: 50%;
+  }
+  .HomeList .homeImg {
+    max-width: 500px;
+  }
+  .HomeList .homeImg img {
+    width: 100%;
+  }

@@ -1,9 +1,11 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import Home from "./pages/Home";
+import About from "./pages/About";
 import Category from "./pages/Category";
 import NotFound from "./pages/NotFound";
 import { createContext, useEffect, useState } from "react";
+
 import { getDocs } from "firebase/firestore";
 import {
   onAuthChange,
@@ -17,6 +19,8 @@ import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import ThankYou from "./pages/ThankYou";
 import Orders from "./pages/Orders";
+import AboutList from "./components/AboutList/AboutList";
+import HomeList from "./components/HomeList/HomeList";
 
 // Создать контекст, который будет хранить данные.
 export const AppContext = createContext({
@@ -67,9 +71,9 @@ function App() {
       >
         <Layout>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<HomeList />} />
             <Route path="/cart" element={<Cart />} />
-            <Route path="/about" element={<h1>About</h1>} />
+            <Route path="/about" element={<AboutList />} />
             <Route path="/contacts" element={<h1>Contacts</h1>} />
             <Route path="/delivery" element={<h1>Delivery</h1>} />
             <Route path="/categories/:slug" element={<Category />} />
